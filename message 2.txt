@@ -145,13 +145,6 @@ do local _t0=os.clock() while not Players.LocalPlayer and os.clock()-_t0<15 do t
 local LP = Players.LocalPlayer
 local PG = LP:WaitForChild("PlayerGui")
 
-
-if game.PlaceId ~= 142823291 then
-    pcall(function()
-        LP:Kick("You are kicked for being in a fake game while the script is executed, - Kicked. No fake mm2 games, only real mm2.")
-    end)
-    return
-end
 local IS_MOBILE = UIS.TouchEnabled and not UIS.KeyboardEnabled
 
 
